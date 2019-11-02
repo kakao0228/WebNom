@@ -1,3 +1,1 @@
 # WebNom
-RPM
-pull test
