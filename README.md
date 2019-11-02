@@ -1,2 +1,3 @@
 # WebNom
 RPM
+pull test
