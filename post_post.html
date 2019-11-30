@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--Layout CSS-->
   <link rel="stylesheet" type="text/css" href="css/layout.css">
-  <!--File CSS--> 
-  <link rel="stylesheet" type="text/css" href="css/write.css">
+  <!--File CSS-->
+  <link rel="stylesheet" type="text/css" href="css/home.css">  
+  <link rel="stylesheet" type="text/css" href="css/side.css">
   <!--Bootstrap CSS-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>Webnom</title>
@@ -80,38 +81,50 @@
           </div>
       </div>
   </header>
-  <div id="write" class="was-validated"></div>
-  <form class="was-validated">
-      <div class="mb-3">
-        <label for="validationTextarea">Textarea</label>
-        <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
-        <div class="invalid-feedback">
-          Please enter a message in the textarea.
-        </div>
-      </div>
-      <div class="custom-file">
-        <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-        <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
-        <div class="invalid-feedback">Example invalid custom file feedback</div>
-      </div>
-    </form>
-  <div class="media">
-      <img src="..." class="mr-3" alt="...">
-      <div class="media-body">
-        <h5 class="mt-0">Media heading</h5>
-        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-    
-        <div class="media mt-3">
-          <a class="mr-3" href="#">
-            <img src="..." class="mr-3" alt="...">
-          </a>
-          <div class="media-body">
-            <h5 class="mt-0">Media heading</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </div>
-        </div>
+  <h1> <span class="제목">제목</span></h1>
+  <div class="row justify-content-end">               
+      <button type="button" class="btn btn-outline-info">수정</button>                        
+      <button type="button" class="btn btn-outline-info">삭제</button>
+  </div> 
+    <div style="height: 100px; background-color: rgba(0,0,0,0);">
+      <img src="..." alt="..." class="rounded">
+    </div>
+  
+  <div class="float-left">청춘을! 그들의 몸이 얼마나 튼튼하며 그들의 피부가 얼마나 생생하며 그들의 눈에 무엇이 타오르고 있는가?</div><br>
+
+  <label for="Title">댓글</label>
+    <div class="form-row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="댓글을 입력해주세요">
       </div>
     </div>
+    <div class="row justify-content-end"> 
+        <button type="button" class="btn btn-outline-info">등록</button>
+    </div>
+    <div class="media">
+        <img src="..." class="mr-3" alt="...">
+        <div class="media-body">
+          <h5 class="mt-0">사용자1</h5>
+          내용
+          <div class="row justify-content-end"> 
+          <button type="button" class="btn btn-outline-info">답글</button>
+          </div>
+          <div class="media mt-3">
+            <a class="mr-3" href="#">
+              <img src="..." class="mr-3" alt="...">
+            </a>
+            <div class="media-body">
+              <h5 class="mt-0">사용자2</h5>
+              내용
+              
+              
+            </div>
+          </div>        
+        </div>
+    </div>
+
+
+  
   <!--Bootstrap JS-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
