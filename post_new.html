@@ -16,14 +16,14 @@
   <header>
     <!--Layout content-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="home.html">
+      <a class="navbar-brand" href="#">
         <img src="img/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="Webnom logo image">
         Webnom
       </a>  
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="home.html">Home</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Movie</a>
@@ -43,28 +43,34 @@
   </header>
   <div class="container" id="login">
     <div class="row justify-content-center">
-      <div class="col-4">
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">이메일</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="눌러">
-            <small id="emailHelp" class="form-text text-muted">도용안함</small>
+      <div class="col-5">
+      <form>
+        <div class="form-group">
+          <label for="formGroupExampleInput">제목</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="입력 ㄱ">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">내용</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="입력 ㄱ"></textarea>
+        </div>   
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+          <label class="custom-file-label" for="inputGroupFile01">사진첨부</label>         
+        </div>
+        <div class="custom-file">
+          <div class="custom-file">
+              <input type="file" class="custom-file-input" id="customFile">
+              <label class="custom-file-label" for="customFile">파일첨부</label>
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">비번</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="눌러">
-          </div>
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Remind Me</label>
-          </div>
-          <button type="submit" class="btn btn-outline-info btn-lg btn-block">Submit</button>
-          <button type="button" class="btn btn-success btn-lg btn-block">Naver</button>
-          <button type="button" class="btn btn-primary btn-lg btn-block">Facebook</button>
-          <button type="button" class="btn btn-warning btn-lg btn-block">Kakao</button>
-        </form>
+          <div class="row justify-content-end">               
+            <button type="button" class="btn btn-outline-info">취소</button>                        
+            <button type="button" class="btn btn-outline-info">등록</button>
+          </div>                  
+        </div>
+      </form>
     </div>
   </div>
+  <!--Bootstrap JS-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
