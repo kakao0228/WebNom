@@ -1,0 +1,39 @@
+ul.menu li {
+  position: relative;
+  z-index: 2;
+}
+
+ul.menu li a {
+  display: block;
+  color: #353535;
+  text-decoration: none;
+  padding: 10px 0px;
+  width: 100px;
+  text-align: center;
+}
+
+ul.menu li a.hover {
+  color: #6c45c5;
+  border: 1px solid #6c45c5;
+  border-bottom: none;
+  background-color: #fff;
+  width: 98px;
+  height: 18px;
+  line-height: 16px;
+}
+
+ul.menu li ul.sub-list {
+  display: none;
+  border: 1px solid #6c45c5;
+  width: 100%;
+  position: absolute;
+  top: 38px;
+  left: 0px;
+  padding: 10px;
+  background-color: #fff;
+  z-index: -1;
+}
+
+ul.menu li ul.sub-list li.sub-list-item {
+  padding-left: 18px;
+}
