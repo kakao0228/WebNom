@@ -1,3 +1,15 @@
 .hidden {
   visibility: hidden;
 }
+
+.hovermenu{
+  
+}
+
+.invisible{
+  visibility: hidden;
+}
+
+.visible{
+  visibility: visible;
+}
