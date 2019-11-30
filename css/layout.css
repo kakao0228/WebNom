@@ -2,11 +2,7 @@
   visibility: hidden;
 }
 
-.invisible{
-  visibility: hidden;
+.sub-list-item {
+  list-style-type: none;
+  display: none;
 }
-
-.visible{
-  visibility: visible;
-}
-
